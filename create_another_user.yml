@@ -1,0 +1,9 @@
+---
+- name: My Test Playbook
+  hosts: all
+  become: yes
+  tasks:
+  - name: create another user
+    user:
+      name: Garima
+      state: present
